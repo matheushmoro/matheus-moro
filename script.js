@@ -14,7 +14,7 @@ function updateHeroScrollState() {
 	const rect = heroImage.getBoundingClientRect();
 	const viewportHeight = window.innerHeight;
 	const viewportCenter = viewportHeight / 2;
-	const centerBand = viewportHeight * 0.12;
+	const centerBand = viewportHeight * 0.22;
 	const elementCenter = rect.top + rect.height / 2;
 	const isVisible = rect.bottom > 0 && rect.top < viewportHeight;
 	const nearCenter = Math.abs(elementCenter - viewportCenter) <= centerBand;
