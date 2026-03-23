@@ -503,16 +503,18 @@ body {
 }
 
 .iframes {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	max-width: 90%;
+	width: 90%;
 	height: 86vh;
 	min-height: 400px;
 	border-radius: 10px;
-	box-sizing: border-box;
 	overflow: hidden;
+}
+
+.iframe-card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 }
 
 .iframe-card-content h3 {
@@ -524,6 +526,9 @@ body {
 	padding: 10px;
 }
 
+#iframe-jokenpo {
+	border: none;
+}
 
 
 .solutions::before {
@@ -732,16 +737,6 @@ body {
 	object-fit: cover;
 }
 
-#div-jokenpo {
-	width: 100%;
-	align-items: center;
-	justify-items: center;
-}
-
-#div-jokenpo p {
-	margin: 10px 0;
-}
-
 .text-link {
 	color: var(--accent-soft);
 	text-decoration: none;
@@ -758,6 +753,17 @@ body {
 	flex-direction: column;
 	gap: 10px;
 	margin-top: 10px;
+}
+
+.gmail-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.gmail-icon {
+	width: 35px;
+	display: block;
 }
 
 .linkedin-link {
